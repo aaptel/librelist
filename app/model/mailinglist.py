@@ -127,7 +127,7 @@ def craft_response(message, list_name, list_addr):
         response['Date'] = message['date']
 
     if 'references' in message:
-        response['References'] = message['References']
+        response['References'] = message['references']
     elif msg_id:
         response['References'] = msg_id
 
